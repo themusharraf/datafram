@@ -6,8 +6,8 @@ from apps.app import ReportAdmin
 
 @admin.register(Material)
 class MaterialAdmin(ImportExportModelAdmin, admin.ModelAdmin):
-    search_fields = ('material', 'id','ulchov_briligi')
-    list_display = ('id', 'material', 'ulchov_briligi', 'miqdori', 'narxi', 'summasi')
-    fields = ('material', 'ulchov_briligi', 'miqdori', 'narxi', 'summasi')
+    search_fields = ('material', 'id','ulchov')
+    list_display = ('id', 'material', 'ulchov', 'miqdori', 'narxi', 'summasi','tashkilot')
+    fields = ('material', 'ulchov', 'miqdori', 'narxi', 'summasi','tashkilot')
     ordering = ('id',)
-    list_filter = ('material', 'ulchov_briligi', 'miqdori', 'narxi', 'summasi')
+    list_filter = ('material', 'ulchov', 'tashkilot')
