@@ -7,6 +7,5 @@ class ReportResource(resources.ModelResource):
     class Meta:
         model = Material
 
-
 class ReportAdmin(ImportExportModelAdmin):
     resource_class = ReportResource
