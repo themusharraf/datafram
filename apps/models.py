@@ -1,7 +1,7 @@
 from django.db import models
 
 class Material(models.Model):
-    material = models.CharField(max_length=555, null=False)  # This field does not allow null values
+    material = models.CharField(max_length=555, null=False)
     ulchov = models.CharField(max_length=555)
     miqdori = models.IntegerField()
     narxi = models.IntegerField()
