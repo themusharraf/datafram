@@ -8,6 +8,6 @@ from apps.app import ReportAdmin
 class MaterialAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ('material', 'id', 'ulchov')
     list_display = ('id', 'material', 'ulchov', 'miqdori', 'narxi', 'summasi', 'tashkilot')
-    fields = ('num', 'material', 'ulchov', 'miqdori', 'narxi', 'summasi', 'tashkilot')
+    fields = ('material', 'ulchov', 'miqdori', 'narxi', 'summasi', 'tashkilot')
     ordering = ('id',)
     list_filter = ('material', 'ulchov', 'tashkilot')
