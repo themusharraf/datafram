@@ -109,7 +109,7 @@ JAZZMIN_SETTINGS = {
 
     "site_brand": "ADMIN",
 
-    # "site_logo": "apps/img/u1.jpg",
+
 
     "welcome_sign": "Salom Admin pagega xo'sh kelibsiz",
 
