@@ -28,7 +28,7 @@ class Material(models.Model):
     )
     cod = models.CharField(max_length=255)
     material = models.CharField(max_length=555, null=False)
-    ulchov = models.CharField(choices=PLAN_TYPE, max_length=200)
+    ulchov = models.CharField(choices=PLAN_TYPE, max_length=200) # choices field
     miqdori = models.IntegerField(blank=True, null=True)
     narxi = models.IntegerField(default=0)
     summasi = models.IntegerField( blank=True, null=True)
